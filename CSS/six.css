@@ -1,0 +1,635 @@
+*{
+    box-sizing: border-box;
+}
+
+
+/**body左右線========================================**/
+body{
+    position: relative;
+}
+
+div.body_reigt_line{
+    display: block;
+    width: 1.5px;
+    height: 100%;
+    background-color:#e9c27f;
+    position:absolute;
+    right:100px;
+    z-index: 3;
+}
+
+div.body_left_line{
+    display: block;
+    width: 1.5px;
+    height: 100%;
+    background-color:#e9c27f;
+    position:absolute;
+    left:100px;
+    z-index: 3;
+}
+
+/**=標題=============================================**/
+
+
+div.team_items{
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+div.team_items h1{
+    font-size: 44px;
+    font-family: "Cormorant Garamond",serif;
+    color:#8A6969;
+    padding: 80px 0 12px 0;
+    letter-spacing: .8rem;
+}
+
+div.team_items p{
+    font-family: "Montserrat",sans-serif;
+    font-size: 13px;
+    padding: 0px 0 44px 0;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    color: rgb(72, 72, 72);
+    font-weight: 500;
+}
+
+div.team_items.two p{
+  padding: 0px 0 20px 0;
+}
+
+
+
+/*分類標籤=============================================**/
+div.fore_label{
+    /* border: 1px solid rgb(39, 18, 225); */
+    display: flex;
+    min-width: 1100px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.fore_label a{
+    text-decoration: none;
+    color: white;
+    text-shadow:1px 1px 3px rgb(62, 46, 46) ;
+    
+  }
+
+  div.fore_label p{
+    /* border: 1px solid rgb(8, 103, 76); */
+    padding: 10px 20px;
+    margin: 10px 20px;
+    margin-bottom: 30px;
+    background-color:#8A6969 ;
+    font-size: 16px;
+  }
+
+  div.fore_label p:hover{
+    /* border: 1px solid rgb(8, 103, 76); */
+    background-color:#ac8383 ;
+  }
+
+  div.fore_label_img{
+    /* border: 1px solid rgb(25, 9, 104); */
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    margin-bottom: 25px;
+  }
+
+  /**分類標籤 -下方icon==============================**/
+
+div.service_lead{
+    /* border: 1px solid red;  */
+    display: flex;
+    justify-content: center;
+}
+
+div.service_lead img{
+   max-width: 40px;
+   padding: 36px 0;
+}
+
+
+/**banner區塊-===================================**/
+
+div.BN_Column{
+    /* border: 1px solid rgb(219, 17, 10); */
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow:hidden;
+}
+
+div.BN_Column_black{
+    position:absolute;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.4;
+    z-index: 1;
+}
+
+img.BN_Column_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+}
+
+div.BN_Column_font p{
+    /* border: 1px solid rgb(219, 17, 10); */
+    position:absolute;
+    z-index: 2;
+    line-height: 1.5;
+    font-size: 32px;
+    align-self: center;
+    color:white;
+    left: 15%;
+    top:35%;
+    letter-spacing: .5rem;
+}
+
+/**==攝影分類作品區塊-================================**/
+
+div.WP_wrap01{
+    /* border: 1px solid rgb(17, 68, 6); */
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.WP_items{
+    /* border: 1px solid rgb(91, 45, 243); */
+    width: calc((1100px - 40px) / 3);
+    text-align: center;
+}
+
+div.WP_img{
+    /* border: 1px solid rgb(91, 45, 243); */
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+img.WP_img_01{
+    width: 100%;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+}
+
+img.WP_img_02{
+    width: 100%;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+}
+
+img.WP_img_03{
+    width: 100%;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+}
+
+div.WP_form{
+    line-height: 28px;
+}
+
+div.WP_form p.form_time{
+    font-size: 16px;
+    letter-spacing: .3rem;
+    color:#8A6969;
+    margin: 5px 0;
+
+}
+
+div.WP_form h2{
+    /* border: 1px solid rgb(6, 102, 30); */
+    font-size: 20px;
+    margin-bottom: 5px;
+    letter-spacing: .3rem;
+}
+
+div.form_item{
+    font-size: 16px;
+    letter-spacing: .3rem;
+}
+
+/**卡片區塊=============================================**/
+
+/**卡片區塊 上方=========**/
+
+
+div.card{
+    margin: auto;
+    /* border: 1px solid #f10808; */
+    max-width: 1100px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 180px;
+    margin-top: 30px;
+   
+}
+
+div.card-wrap{
+    border: 4px solid rgb(134, 88, 67);
+    width: calc( (1100px - 80px) /2 );
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+div.card_top{
+    /* border: 1px solid rgb(65, 12, 4); */
+    display: flex;
+}
+
+div.card_top_img{
+    /* border: 1px solid rgb(59, 92, 9); */
+    width:120px;
+    height:120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+}
+/*01張*/
+img.top_img_01{
+    width: 200%;
+    position: absolute;
+    left:-90%;
+}
+
+/*02張*/
+img.top_img_02{
+    width: 300%;
+    position: absolute;
+    left:-45%;
+    top:-20%;
+}
+
+/*03張*/
+img.top_img_03{
+    width: 300%;
+    position: absolute;
+    left:-125%;
+    bottom: -60%;
+}
+
+/*04張*/
+img.top_img_04{
+    width:360%;
+    position: absolute;
+    left:-100%;
+    bottom: -80%;
+}
+
+/*05張*/
+img.top_img_05{
+    width:400%;
+    position: absolute;
+    left:-120%;
+    bottom: -160%;
+}
+
+/*06張*/
+img.top_img_06{
+    width:420%;
+    position: absolute;
+    right:-120%;
+    bottom: -120%;
+}
+
+
+div .card-wrap span::after{
+    content: '';
+    display: block;
+    width: 100%;
+    background-color:#8A6969;
+    height: 3px;
+    margin: 20px auto;
+}
+
+div.card_top_font{
+    display: inline-block;
+    /* border: 1px solid rgb(198, 38, 13); */
+    align-self:center;
+    line-height: 2;
+    font-size: 16px;
+}
+
+/**卡片區塊 評價==================================================**/
+div.card_star{
+    margin-bottom: 20px;
+    /* border: 1px solid rgb(19, 3, 75); */
+    display: flex;
+    align-items: end;
+}
+
+div.card_star p{
+    display: flex;
+    letter-spacing: .5rem;
+    font-size: 18px;
+}
+
+
+
+/* div.two{
+    border: 1px solid rgb(19, 3, 75);
+} */
+
+/*卡片星星區塊========================================================*/
+
+.star{
+    margin-left:16px;
+    display: inline-block;
+    font-size: 0;
+    position:relative;
+ }
+ .star-item{
+    display: inline-block;
+    width: 20px;
+    height:20px;
+    cursor: pointer;
+    background: url('../img/star.png') center top no-repeat;
+ }
+ input[type="radio"]{
+    position: absolute;
+    clip: rect(0,0,0,0)
+ }
+ input[type="radio"]:checked+.star-item~.star-item{
+     background-position: center bottom;
+ }
+ .star:hover label.star-item{
+    background-position: center top!important;
+ }
+ label.star-item:hover~.star-item{
+    background-position: center bottom!important;
+ }
+ .star-item:after{
+    position:absolute;
+    width:100px;
+    font-size:14px;
+    height:20px;
+    line-height:20px;
+    right:0;
+    margin-right:-105px;
+    color:#666
+ }
+ .star:hover .star-item:after{
+   content:''!important
+ }
+ 
+ 
+ input[type="radio"]:checked+.star-item:after{
+    content:attr(title)
+ }
+ 
+ .star:hover .star-item:hover:after{
+    content:attr(title)!important
+ }
+
+/*卡片文字區塊========================================================*/
+div.card_font{
+    /* border: 1px solid rgb(8, 7, 99); */
+    margin: 22px 0;
+
+}
+
+div.card_font p:first-child{
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+div.card_font P:last-child{
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+
+/*卡片圖片區塊========================================================*/
+
+div.card_img{
+    display: flex;
+    /* border: 1px solid rgb(19, 3, 75); */
+    justify-content:space-between;
+    
+}
+
+div.card_bottom_img{
+    /* border: 1px solid rgb(59, 92, 9); */
+    width:146px;
+    height:146px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+/*=========================================================================*/
+
+/*圖片崁入區塊=============================================*/
+
+/*01*/
+img.one_1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+}
+
+img.one_2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+ }
+
+img.one_3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+ }
+
+ /*02*/
+ img.two_1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+ }
+ 
+ img.two_2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+  }
+
+ /*03*/
+
+ img.three_1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+ }
+ 
+ /* img.three_2{
+     width: 130%;
+     position: absolute;
+     left:-20%;
+     bottom:-50%; 
+  }
+ 
+ img.three_3{
+     width: 200%;
+     position: absolute;
+     left:-70%;
+     bottom:0%; 
+  } */
+ 
+
+/*04*/
+img.fore_1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+ }
+ 
+ img.fore_2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+
+  }
+ 
+ img.fore_3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+  }
+
+/*05*/
+img.five_1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+ }
+ 
+ img.five_2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+
+  }
+ 
+ img.five_3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+  }
+
+/*06*/
+img.six_1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+ }
+ 
+ img.six_2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+
+  }
+ 
+ img.six_3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+  }
+
+/**版權聲明====================================**/
+
+div.earning_statement{
+    background-color: #624a3a;
+
+}
+
+div.earning_statement_wrap{
+    padding: 10px;
+    /* border: 2px solid rgb(53, 83, 218); */
+    max-width: 1100px;
+    margin:auto;
+    text-align: center;
+}
+
+div.earning_statement p{
+    word-break: normal;
+    color: rgb(255, 255, 255);
+}
+
+

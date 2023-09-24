@@ -1,0 +1,492 @@
+*{
+    box-sizing: border-box;
+}
+
+/**body左右線========================================**/
+
+body{
+    position: relative;
+}
+
+div.body_reigt_line{
+    display: block;
+    width: 1.5px;
+    height: 100%;
+    background-color:#e9c27f;
+    position: fixed;
+    right:100px;
+    z-index: 2;
+}
+
+div.body_left_line{
+    display: block;
+    width: 1.5px;
+    height: 100%;
+    background-color:#e9c27f;
+    position: fixed;
+    left:100px;
+    z-index: 2;
+}
+
+/**banner========================================**/
+
+
+div.banner{
+    border-top: 0.3px solid rgb(97, 51, 12);;
+    height: 750px;
+    background-image: url(../img/MAR_0096.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+div.banner div.banner_font{
+    /* border: 1px solid red; */
+    max-width: 1100px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    display: block;
+}
+
+div.banner  div.banner_font div.banner_font_two{
+    /* border: 1px solid rgb(117, 11, 63); */
+    margin-top: 16vh;
+}
+
+div.banner p.one{
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px 5px rgb(97, 51, 12);
+    margin-bottom: 15px;
+    font-family: "Cormorant Garamond",serif;
+}
+
+div.banner h1{
+    /* border: 1px solid red; */
+    font-size: 45px;
+    letter-spacing: .2rem;   /*字距調整*/
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px 5px rgb(97, 51, 12);
+    font-family: "Cormorant Garamond",serif;
+}
+
+div.banner p.content{
+    font-size: 16px;
+    letter-spacing: .3rem;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-shadow: 2px 4px 5px rgb(35, 18, 3),2px 4px 5px rgb(74, 39, 8);
+    font-family: "Montserrat",sans-serif;
+}
+
+
+/**最新消息--標題 ==================================**/
+
+
+div.latest_news{
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+div.latest_news h1{
+    font-size: 44px;
+    font-family: "Cormorant Garamond",serif;
+    color:#e9c27f;
+    padding: 44px 0 12px 0;
+    letter-spacing: .8rem;
+}
+
+div.latest_news p{
+    font-family:"Montserrat",sans-serif;
+    font-size: 13px;
+    padding: 0px 0 44px 0;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    color: rgb(72, 72, 72);
+    font-weight: 500;
+}
+
+
+/**最新消息3區塊====================================**/
+
+div.block div.block_wrap{
+    /* border: 1px solid rgb(159, 16, 167); */
+    max-width: 1100px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+div.block_wrap div.page{
+    /* border: 1px solid rgba(12, 2, 60, 0.925); */
+    text-align: center;
+    margin: 0 15px;
+}
+
+div.block div.img_warp{
+    /* border: 1px solid rgb(208, 31, 15); */
+    width: 300px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+}
+
+div.block div.img_warp img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+}
+
+
+div.block_wrap div.page div.font{
+    /* border: 1px solid rgb(6, 81, 90); */
+    border-bottom:3px solid #e9c27f;
+    border-top:3px solid #e9c27f;
+}
+
+
+div.block_wrap div.page div.font p{
+    /* border: 1px solid rgb(211, 57, 11); */
+    line-height: 1.5;
+    margin: 8px 0;
+}
+
+
+/**服務內容--標題 ===================================**/
+
+
+div.service_items{
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+div.service_items h1{
+    font-size: 44px;
+    font-family: "Cormorant Garamond",serif;
+    color:#e9c27f;
+    padding: 44px 0 12px 0;
+    letter-spacing: .8rem;
+}
+
+div.service_items p{
+    font-family:sans-serif;
+    font-size: 13px;
+    padding: 0px 0 44px 0;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    color: rgb(72, 72, 72);
+    font-weight: 500;
+}
+
+
+/**服務內容區塊 ===================================**/
+
+/**區塊01*/
+div.service_one{
+    /* border: 2px solid rgb(53, 83, 218); */
+    display: flex;
+    width: 100%;
+    
+}
+
+div.service_one div.items {
+    border-radius: 0 20px 20px 0;
+    width: 50%;
+    overflow: hidden;
+}
+
+div.service_one div.items img{
+    /* border: 1px solid rgb(8, 68, 5); */
+    width: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+    min-height: 100%;
+    
+}
+
+div.font_one{
+    /* border: 1px solid rgb(220, 0, 0); */
+    width: 50%;
+    align-self: center;
+}
+
+div.font_one div.font_wrap_left{
+    /* border: 1px solid rgb(239, 7, 189); */
+    max-width: 400px;
+    margin-left: 16%;
+}
+
+div.font_one h2.title{
+    font-family: "Montserrat",sans-serif;
+    /* border: 1px solid rgb(3, 0, 157); */
+    font-size: 35px;
+    margin-bottom: 20px;
+    color:#5a5a5a;
+    letter-spacing: .6rem;
+}
+
+div.font_one h2.title::before{
+    content: '';
+    height: 30px;
+    width: 4px;
+    display: inline-block;
+    background-color: #e9c27f;
+    margin-right: 5%;
+} 
+
+div.font_one p.text{
+    /* border: 1px solid rgb(3, 0, 157); */
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: .4rem;
+    text-align:justify
+}
+
+
+div.font_one p.link{
+    /* border: 1px solid rgb(3, 0, 157); */
+    font-family: "Montserrat",sans-serif;
+    margin-top: 20px;
+    letter-spacing: .4rem;
+    display: flex;
+    align-items: center;
+}
+
+p.link a{
+    text-decoration: none;
+}
+
+p.link a:hover{
+    color: #e9c27f;
+}
+
+
+div.font_one p.link::before{
+    content: '';
+    height: 3px;
+    width: 22px;
+    display: block;
+    background-color: #e9c27f;
+    margin-right: 5%;
+
+}
+
+div.service_lead{
+     /* border: 1px solid red; 
+     background-color: aquamarine; */
+     display: flex;
+     justify-content: center;
+}
+
+/*下方箭頭*/
+div.service_lead img{
+    max-width: 30px;
+    padding: 20px 0;
+}
+
+
+/**區塊02*/
+div.service_two{
+    /* border: 2px solid rgb(53, 83, 218); */
+    display: flex;
+    width: 100%
+}
+
+div.service_two div.items {
+    width: 50%;
+}
+
+div.service_two div.items img{
+    /* border: 1px solid rgb(8, 68, 5); */
+    width: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+    min-height: 100%;
+    border-radius: 5% 0 0 5%;
+}
+
+div.font_two{
+    display: flex;
+    /* border: 1px solid rgb(220, 0, 0); */
+    width: 50%;
+    align-self: center;
+    justify-content: flex-end;
+    
+}
+
+div.font_two div.font_wrap_right{
+    /* border: 1px solid rgb(239, 7, 189); */
+    max-width: 400px;
+    margin-right: 16%;
+}
+
+
+div.font_two h2.title{
+    font-family: Montserrat,sans-serif;
+    /* border: 1px solid rgb(3, 0, 157); */
+    font-size: 35px;
+    margin-bottom: 20px;
+    color:#5a5a5a;
+    letter-spacing: .6rem;
+}
+
+div.font_two h2.title::before{
+    content: '';
+    height: 30px;
+    width: 4px;
+    display: inline-block;
+    background-color: #e9c27f;
+    margin-right: 5%;
+} 
+
+
+div.font_two p.text{
+    /* border: 1px solid rgb(3, 0, 157); */
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: .4rem;
+    text-align:justify
+}
+
+
+div.font_two p.link{
+    /* border: 1px solid rgb(3, 0, 157);  */
+     font-family: "Montserrat",sans-serif;
+    margin-top: 20px; 
+    letter-spacing: .4rem; 
+    display: flex;
+    align-items: center;
+} 
+
+p.link a{
+    color:black;
+    text-decoration: none;
+}
+
+
+div.font_two p.link::before{
+    content: '';
+    height: 3px;
+    width: 22px;
+    display: block;
+    background-color: #e9c27f;
+    margin-right: 5%;
+    border-radius:50px;
+} 
+
+div.service_lead{
+     /* border: 1px solid red; 
+     background-color: aquamarine; */
+     display: flex;
+     justify-content: center;
+}
+
+div.service_lead img{
+    max-width: 30px;
+    padding: 20px 0;
+}
+
+
+/**預約我們-標題=====================================**/
+
+div.reserve_items{
+    /* border: 1px solid red; */
+    text-align: center;
+    background-color: rgb(134, 88, 67);
+}
+
+div.reserve_items h1{
+    font-size: 44px;
+    font-family:  "Cormorant Garamond",serif;
+    color:#e9c27f;
+    padding: 68px 0 12px 0;
+    letter-spacing: .8rem;
+}
+
+div.reserve_items p{
+    font-family: "Montserrat",sans-serif;
+    font-size: 13px;
+    padding: 0px 0 44px 0;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+
+/**預約我們-服務區====================================**/
+
+div.reserve_watch{
+    /* border: 1px solid rgb(1, 142, 127); */
+    box-sizing: border-box;
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    justify-content:center;
+}
+
+div.reserve_watch div.reserve_wrap p{
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: "Montserrat",sans-serif;
+    letter-spacing: .4rem;
+}
+
+div.reserve_circle{
+    /* border: 1px solid rgb(1, 20, 41); */
+    background-color: aliceblue;
+    width: 180px;
+    border-radius: 200px;
+    margin: auto;
+    outline: 2px solid #e9c27f;
+    outline-offset: 8px;
+    overflow: hidden;
+}
+
+div.reserve_circle img.connect{
+   position: relative;
+   top:10px;
+}
+
+div.reserve_circle:hover{
+    outline: 2px solid #e9c27f;
+    outline-offset: 0px;
+}
+
+div.reserve_watch img.direction{
+    /* border: 1px solid rgb(255, 0, 0); */
+    width: 30px;
+    margin: 90px  50px 0 50px;    
+    align-self: baseline;
+
+}
+
+/**版權聲明====================================**/
+
+div.earning_statement{
+    background-color: #624a3a;
+
+}
+
+div.earning_statement_wrap{
+    padding: 10px;
+    /* border: 2px solid rgb(53, 83, 218); */
+    max-width: 1100px;
+    margin:auto;
+    text-align: center;
+}
+
+div.earning_statement p{
+    word-break: normal;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+

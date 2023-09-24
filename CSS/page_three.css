@@ -1,0 +1,427 @@
+*{
+    box-sizing: border-box;
+}
+
+
+/**body左右線========================================**/
+body{
+    position: relative;
+}
+
+div.body_reigt_line{
+    /* border: 1px solid red; */
+    display: block;
+    width: 1.5px;
+    height: 100%;
+    background-color:#e9c27f;
+    position:fixed;
+    right:100px;
+    top:0;
+}
+
+div.body_left_line{
+    /* border: 1px solid red; */
+    display: block;
+    width: 1.5px;
+    height: 100%;
+    background-color:#e9c27f;
+    position:fixed;
+    left:100px;
+    top:0;
+}
+
+/**==標題==================================**/
+
+
+div.team_items{
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+div.team_items h1{
+    font-size: 44px;
+    font-family: "Cormorant Garamond",serif;
+    color:#8A6969;
+    padding: 44px 0 12px 0;
+    letter-spacing: .8rem;
+}
+
+div.team_items p{
+    font-family: "Montserrat",sans-serif;
+    font-size: 13px;
+    padding: 0px 0 44px 0;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    color: rgb(72, 72, 72);
+    font-weight: 500;
+}
+
+div.team_items.two p{
+  padding: 0px 0 20px 0;
+}
+
+
+/**==攝影精選區塊-==================================**/
+
+/**==攝影精選區塊 上1欄-==================================**/
+
+div.featured_one{
+    /* border: 1px solid rgb(54, 8, 236); */
+    display: flex;
+    align-items:center;
+}
+
+div.featured_bg{
+    /* border: 1px solid red; */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+img.bg_center{
+    width: 100%;
+    vertical-align:bottom;
+}
+
+div.featured_icon_1
+,div.featured_icon_2{
+    /* border: 1px solid rgb(6, 79, 121); */
+    max-width: 50px;
+    max-height: 50px;
+}
+
+img.bg_left
+,img.bg_right{
+    width: 100%;
+
+}
+
+img.bg_left
+,img.bg_right{
+    z-index:3;
+    position: relative;
+}
+
+
+div.featured_icon_1{
+    margin-left: 5%;
+}
+
+div.featured_icon_2{
+    margin-right: 5%;
+}
+
+/**==攝影精選區塊 下3欄-==================================**/
+
+
+div.grid{
+    /* border: 1px solid rgb(54, 8, 236); */
+    margin: 0 auto;
+    display: flex;
+    margin-top: 10px;
+}
+
+ div.grid_item {
+    /* border: 1px solid rgb(4, 79, 3); */
+    display: flex;
+    margin: 0 auto;
+    min-width: 1100px;
+  }
+
+  div.item {
+    /* border: 1px solid red; */
+    width: calc((1100px - 20px) / 3);
+    text-align: center;
+  } 
+
+  div.left,div.center{
+    margin-right: 10px;
+  }
+
+  div.item_img{
+    /* border: 1px solid rgb(69, 5, 65); */
+    height: 210px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  div.item.left img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+
+  }
+
+  div.item.center img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+  }
+
+  div.item.right img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+  }
+
+  div.item.fonts{
+    font-size: 16px;
+    padding: 10px 0;
+    line-height: 25px;
+    letter-spacing: .2rem;
+    border-bottom:3px solid #e9c27f ;
+    border-top:3px solid #e9c27f ;
+  }
+
+
+div.item_img p{
+  border:2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 2;
+    left:50%;
+    bottom:10%;
+    transform: translate(-50%, 0);
+    font-family:sans-serif;
+    font-size: 16px;
+    padding: 8px 20px;
+    text-shadow: 1px 1px 3px rgb(14, 13, 13) ,1px 1px 3px rgb(14, 13, 13);
+}
+
+div.item_img p:hover{
+  border:0px solid rgb(255, 255, 255);
+  background-color:#e9c27f;
+  color:#ffffff;
+  text-shadow: 1px 1px 2px rgb(121, 66, 24);
+}
+
+
+div.item_img div{
+    /* border:2px solid rgb(244, 105, 45); */
+    background-color: black;
+    width: calc((1100px - 20px) / 3);
+    height: 210px;
+    opacity: 0.3;
+    position: absolute;  
+    z-index: 1;
+}
+
+div.item_img div:hover{
+    opacity: 0;
+}
+
+
+/**==攝影分類作品-標題==================================**/
+
+div.team_items.two{
+  /* border: 1px solid rgb(35, 5, 5); */
+  text-align: center;
+}
+
+div.team_items.two h1{
+  font-size: 44px;
+  font-family: "Cormorant Garamond",serif;
+  color:#8A6969;
+  padding: 64px 0 12px 0;
+  letter-spacing: .8rem;
+}
+
+div.team_items.two p{
+  font-family: "Montserrat",sans-serif;
+  font-size: 13px;
+  letter-spacing: .4rem;
+  text-transform: uppercase;
+  color: rgb(72, 72, 72);
+}
+
+
+/**==攝影分類作品區塊 下4欄-==================================**/
+
+div.fore{
+    /* border: 1px solid rgb(104, 2, 2); */
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+ div.fore_wrap {
+    /* border: 1px solid rgb(4, 79, 3); */
+    display: flex;
+    min-width: 1100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  div.fore_label{
+    /* border: 1px solid rgb(39, 18, 225); */
+    display: flex;
+    min-width: 1100px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.fore_label a{
+    text-decoration: none;
+    color: white;
+    text-shadow:1px 1px 3px rgb(62, 46, 46) ;
+  }
+
+  div.fore_label p{
+    /* border: 1px solid rgb(8, 103, 76); */
+    padding: 10px 20px;
+    margin: 10px 20px;
+    margin-bottom: 30px;
+    background-color:#8A6969 ;
+    letter-spacing: .2rem;
+  }
+
+  div.fore_label p:hover{
+    /* border: 1px solid rgb(8, 103, 76); */
+    background-color:#ac8383 ;
+  }
+
+  div.fore_label_img{
+    /* border: 1px solid rgb(25, 9, 104); */
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    margin-bottom: 25px;
+  }
+
+  div.fore_item {
+    /* border: 1px solid rgb(44, 93, 5); */
+    width: calc((1100px - 10px) / 2);
+    text-align: center;
+  } 
+
+  div.fore_item.three
+  ,div.fore_item.one{
+    margin-right: 10px;
+  }
+
+  div.fore_item_four_img
+  ,div.fore_item_three_img
+  ,div.fore_item_one_img
+  ,div.fore_item_two_img{
+    /* border: 1px solid rgb(69, 5, 65); */
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  div.fore_item_one_img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+  }
+
+  div.fore_item_two_img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+  }
+
+  div.fore_item_three_img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+
+  }
+
+  div.fore_item_four_img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+  }
+
+  /**==攝影分類作品區塊 下4欄文字-====**/
+
+  div.fore_item_fonts{
+    font-size: 16px;
+    padding: 10px 0;
+    line-height: 25px;
+    letter-spacing: .2rem;
+    border-bottom:3px solid #e9c27f ;
+    border-top:3px solid #e9c27f ;
+    font-family: "Montserrat",sans-serif;
+  }
+
+
+   div.fore_item_one_img p
+  ,div.fore_item_two_img p
+  ,div.fore_item_three_img p
+  ,div.fore_item_four_img p{
+    border:2px solid rgb(255, 255, 255);
+    color: aliceblue;
+    position: absolute;
+    z-index: 2;
+    left:50%;
+    bottom:10%;
+    transform: translate(-50%, 0);
+    font-family:"Montserrat",sans-serif;
+    font-size: 16px;
+    padding: 8px 20px;
+    text-shadow: 1px 1px 3px rgb(14, 13, 13) ,1px 1px 3px rgb(14, 13, 13);
+}
+
+div.fore_item_one_img p:hover,
+div.fore_item_two_img p:hover,
+div.fore_item_three_img p:hover,
+div.fore_item_four_img p:hover{
+  border:0px solid rgb(255, 255, 255);
+  background-color:#e9c27f;
+  color:#ffffff;
+  text-shadow: 1px 1px 2px rgb(121, 66, 24);
+}
+
+/**版權聲明====================================**/
+
+div.earning_statement{
+  background-color: #624a3a;
+
+}
+
+div.earning_statement_wrap{
+  padding: 10px;
+  /* border: 2px solid rgb(53, 83, 218); */
+  max-width: 1100px;
+  margin:auto;
+  text-align: center;
+}
+
+div.earning_statement p{
+  word-break: normal;
+  color: rgb(255, 255, 255);
+}
+
+
+
+

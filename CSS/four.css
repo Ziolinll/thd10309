@@ -1,0 +1,389 @@
+*{
+    box-sizing: border-box;
+}
+
+/**body左右線========================================**/
+body{
+    position: relative;
+}
+
+div.body_reigt_line{
+    display: block;
+    width: 1.5px;
+    height: 100%;
+    background-color:#e9c27f;
+    position:absolute;
+    right:100px;
+    z-index: 3;
+}
+
+div.body_left_line{
+    display: block;
+    width: 1.5px;
+    height: 100%;
+    background-color:#e9c27f;
+    position:absolute;
+    left:100px;
+    z-index: 3;
+}
+
+
+/**banner區塊-===================================**/
+
+div.BN_Column{
+    /* border: 1px solid rgb(219, 17, 10); */
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow:hidden;
+}
+
+div.BN_Column_black{
+    position:absolute;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.4;
+    z-index: 1;
+}
+
+img.BN_Column_img{
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    display: block;
+    left:0;
+    bottom:0;
+    object-fit:cover ; 
+}
+
+div.BN_Column_font p{
+    /* border: 1px solid rgb(219, 17, 10); */
+    position:absolute;
+    z-index: 2;
+    line-height: 1.5;
+    font-size: 32px;
+    align-self: center;
+    color:white;
+    left: 15%;
+    top:35%;
+    letter-spacing: .5rem;
+}
+
+
+/**攝影方案--標題 ==================================**/
+
+
+div.service_items{
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+div.service_items h1{
+    font-size: 44px;
+    font-family: "Cormorant Garamond",serif;
+    color:#e9c27f;
+    padding: 44px 0 12px 0;
+    letter-spacing: .8rem;
+}
+
+div.service_items p{
+    font-family:"Montserrat",sans-serif;
+    font-size: 13px;
+    padding: 0px 0 44px 0;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    color: rgb(72, 72, 72);
+    font-weight: 500;
+}
+
+
+/**服務內容區塊 ===================================**/
+
+/**區塊01 03 左文*/
+div.service_one{
+    /* border: 2px solid rgb(53, 83, 218); */
+    display: flex;
+    width: 100%
+}
+
+div.service_one div.items {
+    width: 50%;
+}
+
+div.service_one div.items img{
+    /* border: 1px solid rgb(8, 68, 5); */
+    width: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+    min-height: 100%;
+}
+
+div.font_one{
+    /* border: 1px solid rgb(220, 0, 0); */
+    width: 50%;
+    align-self: center;
+}
+
+ div.font_wrap_left{
+    /* border: 1px solid rgb(239, 7, 189); */
+    margin-right: 10%;
+    text-align: right;
+
+}
+
+div.font_one h2.title{
+    font-family: "Cormorant Garamond",serif;
+    /* border: 1px solid rgb(3, 0, 157); */
+    font-size: 35px;
+    margin-bottom: 20px;
+    color:#5a5a5a;
+    letter-spacing: .3rem; 
+
+}
+
+div.font_one p.text{
+    /* border: 1px solid rgb(3, 0, 157); */
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: .3rem; 
+}
+
+
+div.font_one p.link{
+    /* border: 1px solid rgb(3, 0, 157); */
+    font-family: "Montserrat",sans-serif;
+    margin-top: 20px;
+    letter-spacing: .4rem;
+    display: flex;
+    align-items: center;
+}
+
+div.font_one p.link::before{
+    content: '';
+    height: 2px;
+    width: 21px;
+    display: block;
+    background-color: #e9c27f;
+    margin-right: 20px;
+    border-radius:50px;
+}
+
+div.service_lead{
+     /* border: 1px solid red; 
+     background-color: aquamarine; */
+     display: flex;
+     justify-content: center;
+}
+
+div.service_lead img{
+    max-width: 30px;
+    padding: 20px 0;
+}
+
+/*3塊方案顯示區  ===============================*/
+/*共同文字對齊 01-04*/
+
+div.card_bottom_img h2.card_title{
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+    color:#535353;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+div.card_bottom_img h2.card_price{
+    text-align: center;
+    font-family: Tahoma;
+    width: 100%;
+    margin-top: 5px;
+    color: rgb(170, 5, 5);
+}
+
+div.card_bottom_img {
+    background-color: #f6e4c5;
+}
+
+/*01*/
+img.one_1,
+img.one_2,
+img.one_3{
+    width: 100%;
+}
+
+/*03*/
+img.one_7,
+img.one_8,
+img.one_9{
+    width: 100%;
+}
+
+/*03*/
+img.one_13,
+img.one_14,
+img.one_15{
+    width: 100%;
+}
+
+
+/**區塊02 04  右文=================*/
+div.service_two{
+    /* border: 2px solid rgb(53, 83, 218); */
+    display: flex;
+    width: 100%
+}
+
+div.service_two div.items {
+    width: 50%;
+}
+
+div.service_two div.items img{
+    /* border: 1px solid rgb(8, 68, 5); */
+    width: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+    min-height: 100%;
+}
+
+div.font_two{
+    /* border: 1px solid rgb(220, 0, 0); */
+    width: 50%;
+    align-self: center;
+    justify-content: flex-end;
+    
+}
+
+div.font_wrap_right{
+    /* border: 1px solid rgb(239, 7, 189); */
+    width: 400px;
+    margin-left: 10%;
+}
+
+
+div.font_two h2.title{
+    font-family: "Cormorant Garamond",serif;
+    /* border: 1px solid rgb(3, 0, 157); */
+    font-size: 35px;
+    margin-bottom: 20px;
+    color:#5a5a5a;
+    letter-spacing: .3rem; 
+}
+
+div.font_two p.text{
+    /* border: 1px solid rgb(3, 0, 157); */
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: .3rem; 
+}
+
+
+div.font_two p.link{
+    /* border: 1px solid rgb(3, 0, 157); */
+    font-family: "Montserrat",sans-serif;
+    margin-top: 20px;
+    letter-spacing: .4rem;
+    display: flex;
+    align-items: center;
+}
+
+div.font_two p.link::before{
+    content: '';
+    height: 2px;
+    width: 21px;
+    display: block;
+    background-color: #e9c27f;
+    margin-right: 20px;
+    border-radius:50px;
+}
+
+div.service_lead{
+     /* border: 1px solid red; 
+     background-color: aquamarine; */
+     display: flex;
+     justify-content: center;
+}
+
+div.service_lead img{
+    max-width: 30px;
+    padding: 20px 0;
+}
+
+/*3小塊方案顯示區  左文=================*/
+/*02*/
+img.one_4,
+img.one_5,
+img.one_6{
+    width: 100%;
+}
+
+/*04*/
+img.one_10,
+img.one_11,
+img.one_12{
+    width: 100%;
+}
+
+/*方案區塊 左+右大圖片========================================================*/
+
+div.card_img{
+    display: flex;
+    /* border: 1px solid rgb(19, 3, 75); */
+    justify-content:flex-end;
+    align-items: center;
+    margin-right: 6.6%;
+    margin-top: 10%;
+}
+
+div.card_bottom_img{
+    /* border: 1px solid rgb(59, 92, 9); */
+    width:152px;
+    height:152px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 2%;
+    
+}
+
+div.featured_icon_1
+,div.featured_icon_2{
+    /* border: 1px solid rgb(6, 79, 121); */
+    max-width: 50px;
+    max-height: 50px;
+}
+
+img.bg_left
+,img.bg_right{
+    width: 100%;
+}
+
+div.featured_icon_1{
+    margin-left: 3.5%;
+    z-index: 3;
+}
+
+div.featured_icon_2{
+    margin-right: 3.5%;
+    margin-left: 2%;
+    z-index: 3;
+}
+
+
+/**版權聲明====================================**/
+
+div.earning_statement{
+    background-color: #624a3a;
+
+}
+
+div.earning_statement_wrap{
+    padding: 10px;
+    /* border: 2px solid rgb(53, 83, 218); */
+    max-width: 1100px;
+    margin:auto;
+    text-align: center;
+}
+
+div.earning_statement p{
+    word-break: normal;
+    color: rgb(255, 255, 255);
+}

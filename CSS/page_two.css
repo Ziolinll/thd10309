@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+}
+
+/**body左右線========================================**/
+body{
+    position: relative;
+}
+
+div.body_reigt_line{
+    display: block;
+    width: 1.5px;
+    height: 100%;
+    background-color:#e9c27f;
+    position:absolute;
+    right:100px;
+}
+
+div.body_left_line{
+    display: block;
+    width: 1.5px;
+    height: 100%;
+    background-color:#e9c27f;
+    position:absolute;
+    left:100px;
+}
+
+/* 品牌介紹 ----------------------------------------------*/
+
+div.brand{
+    /* border: 1px solid rgb(153, 248, 0); */
+    max-width: 1100px;
+    margin: auto;
+}
+
+div.brand div.brand_wrap{
+    display: flex;
+    justify-content: center;
+}
+
+div.brand div.brand_wrap div.brand_font{
+    align-self: center;
+    margin-right: 50px ;
+    /* border: 1px solid rgb(21, 186, 222); */
+    /* margin: 0 50px 150px 50px; */
+}
+
+div.brand_font h3 {
+    /* border: 1px solid rgb(13, 212, 212); */
+    font-size: 22px;
+    letter-spacing: .5rem;
+    margin-bottom: 4%;
+    color: rgb(111, 111, 111);  
+}
+
+div.brand_font h3::before{
+    content: '';
+    height: 24px;
+    width: 3px;
+    display: inline-block;
+    background-color: #e9c27f;
+    margin-right: 5%;
+    vertical-align: bottom;
+
+}
+
+div.brand_font p.brand_main{
+    font-size: 36px;
+    letter-spacing: .6rem;
+    margin: 15px 0 10px 0; 
+    color: rgb(72, 72, 72);
+    animation: title 4s ease;
+    animation-fill-mode:forwards;
+}
+
+@keyframes title {
+    0% {opacity: 1; color: rgb(72, 72, 72);}
+    50% {opacity: 0.5; color:#e9c27f;}
+    100% {opacity: 1; color:#e9c27f;}
+  }
+
+div.brand_font p.brand_content{
+    /* border: 1px solid rgb(239, 90, 10); */
+    line-height: 2.2;
+    letter-spacing: .3rem;
+    font-size: 18px;
+    width: 420px;
+
+}
+
+div.brand img{
+    width: 50%;
+    /* border: 1px solid rgb(79, 3, 229); */
+    width: 400px;
+    margin: 80px 0px;
+}
+
+
+/**團隊介紹區塊-標題  ==================================**/
+
+
+div.team_items{
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+div.team_items h1{
+    font-size: 44px;
+    font-family: "Cormorant Garamond",serif;
+    color:#8A6969;
+    padding: 44px 0 12px 0;
+    letter-spacing: .8rem;
+}
+
+div.team_items p{
+    font-family: "Montserrat",sans-serif;
+    font-size: 13px;
+    padding: 0px 0 44px 0;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    color: rgb(72, 72, 72);
+    font-weight: 500;
+}
+
+/**團隊介紹區塊 ==================================**/
+
+div.team_introduce{
+    /* border:2px solid rebeccapurple; */
+    display:flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+
+div.team_introduce div.team_left div.team_img
+,div.team_introduce div.team_center div.team_img
+,div.team_introduce div.team_right div.team_img{
+    /* border:2px solid rgb(244, 105, 45); */
+    width: calc((1100px - 80px) / 3);
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+div.team_right div.team_img div
+,div.team_center div.team_img div
+,div.team_left div.team_img div{
+    /* border:2px solid rgb(5, 16, 216); */
+    background-color: black;
+    width: calc((1100px - 80px) / 3);
+    height: 600px;
+    opacity: 0.3;
+    position: absolute;  
+    z-index: 1;
+}
+
+div.team_right div.team_img div:hover
+,div.team_center div.team_img div:hover
+,div.team_left div.team_img div:hover{
+    opacity: 0;
+}
+
+div.team_img p{
+    border:2px solid rgb(255, 255, 255);
+    color: aliceblue;
+    position: absolute;
+    z-index: 2;
+    left:50%;
+    bottom:10%;
+    transform: translate(-50%, 0);
+    font-family:sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-shadow: 1px 1px 3px rgb(14, 13, 13) ,1px 1px 3px rgb(14, 13, 13);
+}
+
+div.team_img p:hover{
+    border:0px solid rgb(255, 255, 255);
+    background-color:#e9c27f;
+    color:#ffffff;
+    text-shadow: 1px 1px 2px rgb(121, 66, 24);
+  }
+
+
+div.team_introduce div.team_right{
+    /* border:2px solid rgb(206, 0, 0); */
+    position: relative;
+    margin-right:20px;
+ }
+
+ div.team_introduce div.team_right:hover{
+    /* border:2px solid rgb(206, 0, 0); */
+    position: relative;
+    bottom:24px
+ }
+ 
+
+ div.team_introduce div.team_left{
+    margin-left:20px;
+ }
+
+ div.team_introduce div.team_left:hover{
+    position: relative;
+    bottom:24px
+ }
+ 
+ div.team_introduce div.team_center{
+    margin: 0 20px;
+ }
+
+ div.team_introduce div.team_center:hover{
+    position: relative;
+    bottom:24px
+ }
+
+/*淡入淡出logo*/
+
+img.logo_two{
+    animation: fadein 4s ease;
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+  }
+
+/*淡入淡出logo*/
+
+
+/**團隊介紹區塊 下方文字區塊 =====**/
+ div.team_left div.team_font
+,div.team_center div.team_font
+,div.team_right div.team_font{
+    /* border:2px solid rgb(151, 4, 104); */
+    display: flex;
+    justify-content: center;
+    letter-spacing: .3rem;
+    padding: 20px 0;
+    /* margin: 10px 0px 30px 0; */
+    font-size: 20px;
+    font-family: sans-serif;
+}
+/**============================**/
+
+div.team_left img{
+    height: 120%;
+    position: absolute;
+    right:-60px;
+    bottom:-120px
+}
+
+
+div.team_center img{
+    height: 120%;
+    position: absolute;
+    bottom:0px;
+    right:-60px;
+}
+
+div.team_right img{
+    height: 100%;
+    position: absolute;
+}
+
+/**版權聲明====================================**/
+
+div.earning_statement{
+    background-color: #624a3a;
+
+}
+
+div.earning_statement_wrap{
+    padding: 10px;
+    /* border: 2px solid rgb(53, 83, 218); */
+    max-width: 1100px;
+    margin:auto;
+    text-align: center;
+}
+
+div.earning_statement p{
+    word-break: normal;
+    color: rgb(255, 255, 255);
+}
+

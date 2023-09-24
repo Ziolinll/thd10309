@@ -1,0 +1,130 @@
+footer{
+    /* border: 2px solid rgb(76, 159, 8); */
+    background-color: rgb(134, 88, 67);
+    padding: 20px 0 50px 0 ;
+    width: 100%;
+}
+
+footer div.footer_wrap{
+    border-top: 2px solid #e9c27f;
+    max-width: 1100px;
+    display: flex;
+    padding: 40px 0 0 0;
+    margin: 40px auto;
+    width: 100%;
+}
+
+
+footer img.footer_logo{
+    /* border: 2px solid red; */
+    width: 100px;
+    margin:0 35px
+}
+
+footer div.footer_font0ne {
+    /* border: 2px solid red; */
+    color: aliceblue;
+    margin-right : 60px;
+    font-family: "Montserrat",sans-serif;
+}
+
+footer div.footer_font0ne h6{
+    font-family: "Montserrat",sans-serif;
+    letter-spacing: .3rem;  
+}
+
+footer div.footer_font0ne p{
+    margin-top: 12px;
+    letter-spacing: .3rem;
+    font-size: 12px;
+}
+
+footer div.footer_fonttwo {
+    /* border: 2px solid rgb(34, 3, 61); */
+    color: aliceblue;
+}
+
+footer div.footer_fonttwo h6{
+    display: block;
+    font-family: "Montserrat",sans-serif;
+    letter-spacing: .3rem;
+}
+
+footer div.footer_fonttwo div.ul_iteam{
+    display: flex;
+    padding-left: 20px;
+}
+
+footer div.footer_fonttwo div.ul_iteam ul{
+    margin-right: 80px;
+}
+
+footer div.footer_fonttwo div.ul_iteam ul li{
+    list-style:disc;
+    margin-top: 12px;
+    letter-spacing: .3rem;
+    font-size: 12px;
+}
+
+footer div.footer_icon{
+    /* border: 2px solid red; */
+    flex-grow: 1;
+    align-self: flex-end;
+}
+
+footer div.footer_icon div.footer_img{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+footer div.footer_icon img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+div.footer_icon div.footer_icon_font{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+
+}
+
+div.footer_icon div.footer_icon_font p{
+    font-size: 10px;
+    color: #ffffff;
+    margin-left: 15px;
+    letter-spacing: 0.2rem;
+}
+
+
+
+footer div.copy_right{
+    /* border: 2px solid red; */
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat",sans-serif;
+    max-width: 1100px;
+    display:flex;
+    margin: auto;
+    letter-spacing: .2rem;
+    align-items: center;
+}
+
+footer div.copy_right::after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background-color: #e9c27f;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+ul.ul_one li a,
+ul.ul_two li a{
+    text-decoration: none;
+    color: white;
+}
+
+
